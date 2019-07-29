@@ -1,0 +1,13 @@
+﻿%BinariniOperatori l L g G e E i I
+%UnarniOperatori s S t T
+
+Binarni:
+	_ var BinarniOperatori var2
+Unarni:
+	UnarniOperatori var _ Unarni
+	UnarniOperatori var
+
+Izraz:
+	Binarni & Izraz
+	Unarni & Izraz
+	0
